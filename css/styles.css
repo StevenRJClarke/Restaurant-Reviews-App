@@ -317,7 +317,7 @@ nav h1 a {
 
 /* ====================== Mobile ====================== */
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
 	/* ====================== Restaurant Filtering ====================== */
 	.filter-options {
 		height: 125px;
