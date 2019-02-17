@@ -320,6 +320,11 @@ nav h1 a {
 
 /* ====================== Mobile ====================== */
 @media screen and (max-width: 450px) {
+	.inside #footer {
+	  bottom: unset;
+	  position: absolute;
+	}
+
 	/* ====================== Navigation ====================== */
 	nav h1 {
 		padding-top: 10px;
