@@ -316,7 +316,6 @@ nav h1 a {
 /* ====================== Responsive ====================== */
 
 /* ====================== Mobile ====================== */
-
 @media screen and (max-width: 450px) {
 	/* ====================== Navigation ====================== */
 	nav h1 {
@@ -335,5 +334,13 @@ nav h1 a {
 	/* ====================== Restaurant Listing ====================== */
 	#restaurants-list li {
 		width: calc(100% - 30px)
+	}
+}
+
+/* ====================== Tablet ====================== */
+@media screen and (min-width: 451px) and (max-width: 600px) {
+	/* ====================== Navigation ====================== */
+	nav h1 a {
+		font-size: 20pt;
 	}
 }
