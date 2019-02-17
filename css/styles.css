@@ -345,6 +345,11 @@ nav h1 a {
 		position: relative;
 		width: 100%;
 	}
+
+	#restaurant-container, #reviews-container {
+		padding: 10px;
+		width: 100%;
+	}
 }
 
 /* ====================== Tablet ====================== */
