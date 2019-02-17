@@ -338,6 +338,12 @@ nav h1 a {
 	#restaurants-list li {
 		width: calc(100% - 30px)
 	}
+
+	/* ====================== Restaurant Details ====================== */
+	.inside #map-container {
+		height: 400px;
+		width: 100%;
+	}
 }
 
 /* ====================== Tablet ====================== */
