@@ -121,7 +121,7 @@ nav h1 a {
 	align-items: center;
 	background-color: #3397DB;
 	border-top: solid #252831;
-	height: 85px;
+	height: 75px;
 	padding-top: 10px;
   width: 100%;
 }
@@ -318,6 +318,12 @@ nav h1 a {
 /* ====================== Mobile ====================== */
 
 @media screen and (max-width: 350px) {
+	/* ====================== Restaurant Filtering ====================== */
+	.filter-options {
+		height: 125px;
+	}
+
+	/* ====================== Restaurant Listing ====================== */
 	#restaurants-list li {
 		width: calc(100% - 30px)
 	}
