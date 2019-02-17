@@ -318,6 +318,15 @@ nav h1 a {
 /* ====================== Mobile ====================== */
 
 @media screen and (max-width: 450px) {
+	/* ====================== Navigation ====================== */
+	nav h1 {
+		padding-top: 10px;
+	}
+
+	nav h1 a {
+		font-size: 18px;
+	}
+
 	/* ====================== Restaurant Filtering ====================== */
 	.filter-options {
 		height: 125px;
