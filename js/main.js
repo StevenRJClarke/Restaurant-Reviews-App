@@ -11,7 +11,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
   initMap(); // added
   fetchNeighborhoods();
   fetchCuisines();
-  document.querySelector('.skip-link').focus();
+
+  // Use skip button so screen reader jumps straight to filtering and selecting
+  // restaurants
+
+  // Focus on button on load
+  let skipLink = document.querySelector('.skip-link');
+  skipLink.focus();
+
+  // When button pressed, link to filter options section
+  let = filterOptions = document.getElementById('filter-options');
+  skipLink.addEventListener('click', () => {
+    filterOptions.focus();
+    window.location.href = "#filter-options";
+  });
 });
 
 /**
