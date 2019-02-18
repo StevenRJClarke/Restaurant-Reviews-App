@@ -48,3 +48,22 @@ self.adEventListener('fetch', event => {
       .then( response => response || fetch(event.request) )
   }
 })
+
+// Update cache
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    // caches.keys() returns a Promise which resolves to an array of cache names
+    // e.g. ['restaurant-app-cache-v1', 'restaurant-app-cache-v2', ... ]
+    caches.keys()
+    // This array is passed into Promise.all(), which takes in an array as an
+    // argument
+    .then(
+      // Filter out caches not equal to the static cache, which is the one
+      // we don't want to delete
+      caches.filter( cache => cache !== staticCache )
+      // Delete these non-static cache caches
+      .map( cache => caches.delete(cache) )
+
+    )
+  )
+})
