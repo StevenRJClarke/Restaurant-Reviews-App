@@ -24,8 +24,11 @@
       <div id="map"></div>
     </section>
     <section>
-      <div id="filter-options" class="filter-options">
-        <h2>Filter Results</h2>
+      <div class="filter-options">
+        <div id="filter-results-description" hidden>
+          Use the two comboboxes to filter restaurants. The first combobox filters by the neighbourhood. The second combobox filters by the type of cuisine.
+        </div>
+        <h2 id="filter-options" aria-describedby="filter-results-description" tabindex="0">Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
