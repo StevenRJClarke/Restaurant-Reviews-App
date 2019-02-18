@@ -1,5 +1,9 @@
 // Install the service worker
 
+// Static cache will not be deleted.
+// Use versioning
+let staticCache = 'restaurant-app-cache-v1';
+
 // Files to cache
 let urlsToCache = [
   './',
@@ -26,7 +30,7 @@ let urlsToCache = [
 self.addEventListener('install', event => {
   event.waitUntil(
     // Open cache
-    caches.open('cache')
+    caches.open(staticCache)
     // Add files to cache
     .then( cache => cache.addAll(urlsToCache) )
   );
@@ -34,6 +38,7 @@ self.addEventListener('install', event => {
 
 // Fetch filers from cache
 self.adEventListener('fetch', event => {
+  let staticCache = ''
   event.respondWith{
     // See if any of the requests that the page makes (images, scripts etc) are
     // stored in the cache...
