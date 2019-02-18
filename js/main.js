@@ -191,9 +191,17 @@ createRestaurantHTML = (restaurant) => {
   li.append(address);
 
   const more = document.createElement('a');
-  more.innerHTML = 'View Details';
+  more.innerHTML = `<span aria-describedby="${restaurant.name.replace(/\s/g, '-')}-restaurant-description">View Details</span>`;
   more.href = DBHelper.urlForRestaurant(restaurant);
-  li.append(more)
+  li.append(more);
+
+  // Add aria-describedby to 'View Details', letting the screen reader read out
+  // the details of the restaurant
+  const description = document.createElement('div');
+  description.id = `${restaurant.name.replace(/\s/g, '-')}-restaurant-description`;
+  description.innerHTML = `${restaurant.name}. ${restaurant.neighborhood}. ${restaurant.address}. Press enter to view detail. Press tab to hear the next restaurant.`;
+  description.hidden = true;
+  li.append(description);
 
   return li
 }
