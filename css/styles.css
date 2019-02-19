@@ -64,6 +64,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	flex-direction: column;
 	flex-wrap: wrap;
   min-height: 100%;
+	width: 100%;
 }
 
 #footer {
