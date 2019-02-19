@@ -96,6 +96,12 @@ nav h1 a {
   text-transform: uppercase;
 }
 
+.breadcrumb {
+	background-color: transparent;
+	height: auto;
+	width: auto;
+}
+
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
