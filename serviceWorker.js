@@ -23,7 +23,7 @@ let urlsToCache = [
   './img/10.jpg',
   './js/dbhelper.js',
   './js/main.js',
-  './js/restaurant.info.js',
+  './js/restaurant_info.js',
   './js/sw-register.js'
 ];
 
