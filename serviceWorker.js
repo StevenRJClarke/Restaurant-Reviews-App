@@ -57,7 +57,7 @@ self.addEventListener('activate', event => {
     caches.keys()
     // This array is passed into Promise.all(), which takes in an array as an
     // argument
-    .then(
+    .then(caches =>
       // Filter out caches not equal to the static cache, which is the one
       // we don't want to delete
       caches.filter( cache => cache !== staticCache )
