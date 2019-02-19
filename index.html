@@ -29,10 +29,10 @@
           Use the two comboboxes to filter restaurants. The first combobox filters by the neighbourhood. The second combobox filters by the type of cuisine.
         </div>
         <h2 id="filter-options" aria-describedby="filter-results-description" tabindex="0">Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Select neighbourhood">
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" role="checkbox" aria-label="Select neighbourhood">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="Select cuisine">
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" role="checkbox" aria-label="Select cuisine">
           <option value="all">All Cuisines</option>
         </select>
       </div>
