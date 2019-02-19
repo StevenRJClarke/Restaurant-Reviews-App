@@ -39,14 +39,14 @@ self.addEventListener('install', event => {
 // Fetch filers from cache
 self.adEventListener('fetch', event => {
   let staticCache = ''
-  event.respondWith{
+  event.respondWith(
     // See if any of the requests that the page makes (images, scripts etc) are
     // stored in the cache...
     caches.match(event.request)
       // ...if any are stored in the cache, use them on the page. Else make a
       // fetch request
       .then( response => response || fetch(event.request) )
-  }
+  )
 })
 
 // Update cache
