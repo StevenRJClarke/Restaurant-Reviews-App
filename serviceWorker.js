@@ -36,7 +36,7 @@ self.addEventListener('install', event => {
   );
 });
 
-// Fetch filers from cache
+// Fetch files from cache
 self.addEventListener('fetch', event => {
   let staticCache = ''
   event.respondWith(
