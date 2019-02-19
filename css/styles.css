@@ -67,6 +67,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	width: 100%;
 }
 
+#map-container {
+	width: 100%;
+}
+
 #footer {
   background-color: #444;
   color: #aaa;
